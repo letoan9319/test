@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F7F4ED;
+    --bg-paper: #FFFCF5;
+    --text-primary: #302C27;
+    --text-secondary: #71685E;
+    --accent-red: #A94D3C;
+    --accent-sage: #71806A;
+    --border-main: #DED7CB;
+    --paper-shadow: 0 10px 30px -5px rgba(48, 44, 39, 0.08), 0 4px 6px -2px rgba(48, 44, 39, 0.04);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  button, a, input, select {
+    touch-action: manipulation;
+  }
+
+  button:focus-visible, a:focus-visible, input:focus-visible {
+    outline: 2px solid var(--accent-red);
+    outline-offset: 2px;
+  }
+
+  h1, h2, h3, h4, .font-serif-title {
+    font-family: 'Noto Serif', serif;
+  }
+}
+
